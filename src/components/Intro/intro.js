@@ -8,6 +8,7 @@ function Intro() {
   return (
     
     <section id="intro">
+
         <div className='introcontent'>
             <span className='hello'> Hello </span>
             <span className='introText'> I'm <span className='introName'> Kaanushan </span> <br/> Software Engineer </span>
@@ -15,6 +16,7 @@ function Intro() {
             <Link> <button className='btn'> <img src={btnImg} alt='Hire' className='btnImg'/> Hire Me </button> </Link>
         </div>
         <img src={bg} alt="" className='bg' /> 
+        
     </section>
   )
 }
