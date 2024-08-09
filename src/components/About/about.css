@@ -40,3 +40,15 @@
     border-radius: 0.5rem;
     background: #1f2a32;
 }
+
+.aboutBarImg{
+    object-fit: cover;
+    height:5rem ;
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+.aboutBarText>p{
+    font-size: 1rem;
+    font-weight: 200;
+}

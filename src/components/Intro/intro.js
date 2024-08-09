@@ -15,7 +15,7 @@ function Intro() {
             <p className='IntroPara'> I am a Skilled Web Designer with experience in creating visually <br/>apealing and user friendly websites. </p>
             <Link> <button className='btn'> <img src={btnImg} alt='Hire' className='btnImg'/> Hire Me </button> </Link>
         </div>
-        <img src={bg} alt="" className='bg' /> 
+        <img src={bg} alt="bg" className='bg' /> 
         
     </section>
   )

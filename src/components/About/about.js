@@ -1,7 +1,7 @@
 import React from 'react';
-import AppDevelopment from '../../assets/app.JPEG';
-import UIDesign from '../../assets/ui.JPEG';
-import WebDevelopment from '../../assets/web.JPEG';
+import AppDevelopment from '../../assets/App.png';
+import UIDesign from "../../assets/UI.png";
+import WebDevelopment from '../../assets/web.png';
 import './about.css';
 
 
@@ -27,6 +27,15 @@ const About = () => {
                     <p>I am a skilled and passionate web designer with experience in creating </p>
                 </div>
             </div>
+
+            <div className='aboutBar'>
+                <img src={AppDevelopment} alt='AppDevelopment' className='aboutBarImg'/>
+                <div className='aboutBarText'>
+                    <h2> App Development</h2>
+                    <p> I am a skilled and passionate web designer with experience in creating</p>
+                </div>
+            </div>
+
 
             <div className='aboutBar'>
                 <img src={AppDevelopment} alt='AppDevelopment' className='aboutBarImg'/>
