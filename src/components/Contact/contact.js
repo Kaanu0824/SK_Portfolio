@@ -28,17 +28,25 @@ const Contact = ()=> {
     <span id='contactpage'>
         <div id ='contact'>
             <h1 className='contactPageTitle'> Contact  Me  </h1>
-            <span className='clientDesc'> Please Fill out the form below to dicuss any work opportunities </span>
+            <span className='clientDesc'> Please fill out the form below to discuss any work opportunities </span>
             <form className='contactForm' ref={form} onSubmit={sendEmail} >
                 <input type='text' className='name' placeholder='Your Name' name="user_name" />
                 <input type='email' className='email' placeholder='Your Email' name="user_email" />
                 <textarea name='message' rows='5' className='msg' placeholder='Your Feedback' /> 
                 <button type='submit' value='Send' className='submitBtn'> Submit </button>
                 <div className='links'>
-                    <img src={Linke} alt='Linke' className='link'/>
-                    <img src={Git} alt='Git' className='link'/>
-                    <img src={Face} alt='Face' className='link'/>
-                    <img src={Insta} alt='Insta' className='link'/>
+                    <a href='https://www.linkedin.com/in/kaanushan-sivarasa/' target='_blank' rel='noopener noreferrer'>
+                        <img src={Linke} alt='LinkedIn' className='link'/>
+                    </a>
+                    <a href='https://github.com/Kaanu0824' target='_blank' rel='noopener noreferrer'>
+                    <img src={Git} alt='GitHub' className='link'/>
+                    </a>
+                    <a href='https://web.facebook.com/KAANUSHAN' target='_blank' rel='noopener noreferrer'>
+                    <img src={Face} alt='Facebook' className='link'/>
+                    </a>
+                    <a href='https://www.instagram.com/kaanu_sk_/' target='_blank' rel='noopener noreferrer'>
+                    <img src={Insta} alt='Instagram' className='link'/>
+                    </a>
                 </div>
             </form>
         </div>
@@ -46,4 +54,4 @@ const Contact = ()=> {
   )
 }
 
-export default Contact
+export default Contact;
