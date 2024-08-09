@@ -1,4 +1,4 @@
-#about {
+#education {
     overflow: hidden;
     width: 100vw;
     max-width: 65rem;
@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.aboutTitle {
+.educationTitle {
     font-size: 3rem;
     font-weight: 600;
     padding-top: 3rem;
@@ -18,21 +18,21 @@
 
 }
 
-.aboutDesc {
+.educationDesc {
     font-weight: 300;
     font-size: 1.5rem;
     /* max-width: 50rem; */
     padding: 0 2rem;
 }
 
-.aboutBars{
+.educationBars{
     margin: 1.5rem;
     width: 100vw;
     max-width: 80%;
     text-align: left;
 }
 
-.aboutBar {
+.educationBar {
     display: flex;
     margin: 1rem;
     padding: 1.5rem 2rem;
@@ -40,30 +40,30 @@
     background: #1f2a32;
 }
 
-.aboutBarImg{
+.educationBarImg{
     object-fit: cover;
     height:5rem ;
     width: 5rem;
     margin-right: 2rem;
 }
 
-.aboutBarText>p{
+.educationText>p{
     font-size: 1rem;
     font-weight: 200;
 }
 
 @media screen and (max-width:430px) {
-    .aboutBarText>p {
+    .educationBarText>p {
         font-size: 2vw;
     }
-    .aboutBarImg{
+    .educationBarImg{
         height: 5rem;
         width: 5rem;
     }
-    .aboutBarText >h2 {
+    .educationBarText >h2 {
         font-size: 5vw;
     }
-    .aboutBarText >p {
+    .educationBarText >p {
         font-size: 2.25vw;
     }
 

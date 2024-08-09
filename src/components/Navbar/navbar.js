@@ -13,7 +13,7 @@ const navbar = () => {
         <div className='desktopmenu'>
             <Link className='desktopMenuListItem'> Home </Link>
             <Link className='desktopMenuListItem'> About</Link>
-            <Link className='desktopMenuListItem'> Portfolio </Link>
+            <Link className='desktopMenuListItem'> Education </Link>
             <Link className='desktopMenuListItem'> Projects </Link>
         </div>
         
