@@ -67,6 +67,9 @@
     .aboutBarText >p {
         font-size: 2.25vw;
     }
+    .aboutDesc {
+        font-size: 1rem;
+    }
 
     
 }

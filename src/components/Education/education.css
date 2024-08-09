@@ -73,9 +73,8 @@
     .educationBarText >h3 {
         font-size: 2vw;
     }
-    .educationBarText >p {
-        font-size: 2.25vw;
+    .educationDesc{
+        font-size: 1rem;
     }
 
-    
 }
