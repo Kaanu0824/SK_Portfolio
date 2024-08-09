@@ -60,3 +60,49 @@
     }
     
 }
+
+.active {
+    color: yellow;
+    border-bottom: 3px solid yellow;
+    padding-bottom: 0.5rem;
+}
+
+.navMenu {
+    position:absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    min-width: 15rem;
+    height: fit-content;
+    background: rgb(40, 40, 40 );
+    border-radius: 1rem ;
+}
+
+.ListItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30,30);
+}
+
+.monMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+
+}
+
+@media screen and (max-width:430px) {
+    .monMenu {
+        display: flex;
+    }
+
+    .desktopmenu{
+        display: none;
+    }
+
+    
+}

@@ -3,9 +3,11 @@ import './experience.css'
 
 function Experience() {
   return (
-    <section id='section'>
+    <section id='experience'>
         <span className='educationTitle' > Experience </span>
     </section>
+
+    
   )
 }
 
