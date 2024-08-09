@@ -70,6 +70,8 @@
     .aboutDesc {
         font-size: 1rem;
     }
-
+    .aboutTitle{
+        padding-top: 5rem;
+    }
     
 }
