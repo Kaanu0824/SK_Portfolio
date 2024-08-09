@@ -8,7 +8,7 @@ function Education() {
   return (
     <section id='education'>
         <span className='educationTitle' > Education </span>
-        <span className='educationDesc'> I am a skilled and passionate web designer with experience in creating visually appealing and user-friendly websites. I have a strong understanding of design and a keen eye for detail. I am proficient in HTML, CSS, and JavaScript, as well as design software such as Adobe Photoshop and Illustrator. </span>
+        <span className='educationDesc'> I completed a BSc (Hons) in Software Engineering at the Sri Lanka Institute of Information Technology, specializing in Information Technology. Prior to this, I finished my Advanced Level in the Physical Science stream at Jaffna Hindu College and my Ordinary Level at Kodikamam Thirunavukarasu Central College. </span>
         <div className='educationBars'>
             
         <div className='educationBar'>

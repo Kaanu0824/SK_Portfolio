@@ -16,7 +16,7 @@ const About = () => {
                 <img src={UIDesign} alt='UIDesign' className='aboutBarImg'/>
                 <div className='aboutBarText'>
                     <h2> UI/UX Design</h2>
-                    <p> I am a skilled and passionate web designer with experience in creating</p>
+                    <p> Experienced in crafting intuitive and user-centered designs as a UI/UX designer </p>
                 </div>
             </div>
 
@@ -24,7 +24,7 @@ const About = () => {
                 <img src={WebDevelopment} alt='WebDevelopment' className='aboutBarImg'/>
                 <div className='aboutBarText'>
                     <h2> Web Development </h2>
-                    <p>I am a skilled and passionate web designer with experience in creating </p>
+                    <p> Skilled in building responsive and dynamic websites through front-end and back-end web development. </p>
                 </div>
             </div>
 
@@ -32,18 +32,18 @@ const About = () => {
                 <img src={AppDevelopment} alt='AppDevelopment' className='aboutBarImg'/>
                 <div className='aboutBarText'>
                     <h2> App Development</h2>
-                    <p> I am a skilled and passionate web designer with experience in creating</p>
+                    <p> Proficient in developing and deploying functional and user-friendly mobile and web applications </p>
                 </div>
             </div>
 
-
+{/* 
             <div className='aboutBar'>
                 <img src={AppDevelopment} alt='AppDevelopment' className='aboutBarImg'/>
                 <div className='aboutBarText'>
                     <h2> App Development</h2>
                     <p> I am a skilled and passionate web designer with experience in creating</p>
                 </div>
-            </div>
+            </div> */}
             
         </div>
      
