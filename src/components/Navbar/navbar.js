@@ -14,7 +14,7 @@ const navbar = () => {
             <Link className='desktopMenuListItem'> Home </Link>
             <Link className='desktopMenuListItem'> About</Link>
             <Link className='desktopMenuListItem'> Education </Link>
-            <Link className='desktopMenuListItem'> Projects </Link>
+            <Link className='desktopMenuListItem'> Experience </Link>
         </div>
         
         <button className='desktopmenuBtn'>
