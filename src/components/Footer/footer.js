@@ -1,11 +1,10 @@
 import React from 'react'
-import './footer.css'
+import "./footer.css"
 
 function Footer() {
   return (
-    <Footer classname='footer'>
-        Copyright STK 2024 . All right received.
-    </Footer>
+
+    <span className='footer' > Copyright &#169; 2024 STK. All right received. </span>
   )
 }
 
