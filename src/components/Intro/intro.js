@@ -3,14 +3,13 @@ import btnImg from '../../assets/hire.png';
 import bg from '../../assets/Intro.JPG';
 import './intro.css';
 
-
 function Intro() {
   return (
     <section id="intro">
       <div className="introcontent">
         <span className="hello"> Hello </span>
         <span className="introText">
-          I'm <span className="introName"> Kaanushan </span> <br /> Software Engineer
+          I'm <span className="introName">Kaanushan</span> <br /> Software Engineer
         </span>
         <p className="IntroPara">
           I am a Skilled Web Designer with experience in creating visually <br />
