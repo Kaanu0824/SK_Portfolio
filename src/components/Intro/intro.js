@@ -12,7 +12,7 @@ function Intro() {
           I'm <span className="introName">Kaanushan</span> <br /> Software Engineer
         </span>
         <p className="IntroPara">
-          I am a Skilled Web Designer with experience in creating visually <br />
+          I am a Skilled Web Designer with experience in creating visually 
           appealing and user-friendly websites.
         </p>
         <a
