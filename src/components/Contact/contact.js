@@ -13,13 +13,13 @@ const Contact = ()=> {
 
     emailjs
       .sendForm('Kaanu_1700', 'template_v2do518', form.current, {
-        publicKey: '_Q0aljcJxeRDA8vMe ',
+        publicKey: '_Q0aljcJxeRDA8vMe',
       })
       .then(
         () => {
           console.log('SUCCESS!');
         },(error) => {
-          console.log(error.text);
+          console.log('FAILED...', error.text);
         },
       );
   };
