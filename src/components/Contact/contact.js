@@ -19,7 +19,6 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
-          alert('Message sent successfully!'); 
           form.current.reset(); 
         },
         (error) => {
