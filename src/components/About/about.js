@@ -35,16 +35,7 @@ const About = () => {
                     <p> Proficient in developing and deploying functional and user-friendly mobile and web applications </p>
                 </div>
             </div>
-
-{/* 
-            <div className='aboutBar'>
-                <img src={AppDevelopment} alt='AppDevelopment' className='aboutBarImg'/>
-                <div className='aboutBarText'>
-                    <h2> App Development</h2>
-                    <p> I am a skilled and passionate web designer with experience in creating</p>
-                </div>
-            </div> */}
-            
+                        
         </div>
      
     </section>
