@@ -65,13 +65,18 @@
   }
   
   .introText {
-    animation: blink 2s infinite; /* Apply blinking animation */
+    animation: blink 2s infinite; 
   }
   
   @media screen and (max-width: 430px) {
+
+    .link {
+      display: none;
+    }
+
     .bg {
       right: -10vw;
-      opacity: 0.3; /* Make the background image more subtle */
+      opacity: 0.3;
       filter: blur;
     }
     
