@@ -1,5 +1,4 @@
 import React from 'react';
-import btnImg from '../../assets/hire.png';
 import bg from '../../assets/Intro.JPG';
 import './intro.css';
 
@@ -12,7 +11,7 @@ function Intro() {
           I'm <span className="introName">Kaanushan</span> <br /> Software Engineer
         </span>
         <p className="IntroPara">
-          I am a Skilled Web Designer with experience in creating visually 
+          I am a Skilled Web Designer with experience in creating visually <br/> 
           appealing and user-friendly websites.
         </p>
         <a
@@ -20,9 +19,7 @@ function Intro() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="btn">
-            <img src={btnImg} alt="Hire" className="btnImg" /> Download Resume
-          </button>
+          <button className="btn"> Download Resume</button>
         </a>
       </div>
       <img src={bg} alt="Background" className="bg" />

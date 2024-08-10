@@ -10,7 +10,7 @@
   .bg {
     position: absolute;
     top: 10rem;
-    right: 10rem;
+    right: 0rem;
     z-index: -1;
     object-fit: cover;
     height: 55rem;
@@ -49,12 +49,9 @@
     border: none;
     border-radius: 2rem;
     align-items: center;
-  }
-  
-  .btnImg {
     object-fit: cover;
     margin: 0 0.25rem;
-    height: 1rem;
+
   }
   
   /* Blinking Animation */
