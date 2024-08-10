@@ -70,10 +70,6 @@
   
   @media screen and (max-width: 430px) {
 
-    .link {
-      display: none;
-    }
-
     .bg {
       right: -10vw;
       opacity: 0.3;
