@@ -8,10 +8,10 @@ function Intro() {
       <div className="introcontent">
         <span className="hello"> Hello </span>
         <span className="introText">
-          I'm <span className="introName">Kaanushan</span> <br /> Software Engineer
+          <span className="typingText">I’m Kaanushan </span><span><br /> Software Engineer</span>
         </span>
         <p className="IntroPara">
-          I am a Skilled Web Designer with experience in creating visually <br/> 
+          I am a Skilled Web Designer with experience in creating visually <br/>
           appealing and user-friendly websites.
         </p>
         <a
