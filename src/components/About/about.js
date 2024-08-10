@@ -1,7 +1,7 @@
 import React from 'react';
 import AppDevelopment from '../../assets/App .png';
 import UIDesign from "../../assets/UIUX.png";
-import WebDevelopment from '../../assets/WEB.png';
+import WebDevelopment from '../../assets/web.png';
 import './about.css';
 
 
@@ -35,7 +35,7 @@ const About = () => {
                     <p> Proficient in developing and deploying functional and user-friendly mobile and web applications </p>
                 </div>
             </div>
-                        
+
         </div>
      
     </section>
