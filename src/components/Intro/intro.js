@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from '../../assets/Intro.JPG';
+import bg from '../../assets/intro-1.png';
 import './intro.css';
 
 function Intro() {

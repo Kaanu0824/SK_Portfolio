@@ -4,6 +4,7 @@ import OL from '../../assets/ktcc.png'
 import BSC from '../../assets/sliit.png'
 import './education.css'
 
+
 function Education() {
   return (
     <section id='education'>
