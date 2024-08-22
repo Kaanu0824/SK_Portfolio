@@ -1,5 +1,5 @@
 import React from 'react';
-import AppDevelopment from '../../assets/App .png';
+import AppDevelopment from '../../assets/App.png';
 import UIDesign from "../../assets/UIUX.png";
 import WebDevelopment from '../../assets/web.png';
 import './about.css';
