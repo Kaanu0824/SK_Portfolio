@@ -1,9 +1,10 @@
 import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react';
 import Face from '../../assets/face.png';
-import Git from '../../assets/git.png';
+import Git from '../../assets/github.jpeg';
 import Insta from '../../assets/ins.png';
 import Linke from '../../assets/linke.png';
+import What from '../../assets/What.webp';
 import './contact.css';
 
 const Contact = () => {
@@ -47,11 +48,14 @@ const Contact = () => {
             <a href='https://github.com/Kaanu0824' target='_blank' rel='noopener noreferrer'>
               <img src={Git} alt='GitHub' className='link' />
             </a>
-            <a href='https://web.facebook.com/KAANUSHAN' target='_blank' rel='noopener noreferrer'>
-              <img src={Face} alt='Facebook' className='link' />
+            <a href='https://wa.me/+94774549953' target='_blank' rel='noopener noreferrer'>
+              <img src={What} alt='Whatsapp' className='link' />
             </a>
             <a href='https://www.instagram.com/kaanu_sk_/' target='_blank' rel='noopener noreferrer'>
               <img src={Insta} alt='Instagram' className='link' />
+            </a>
+            <a href='https://web.facebook.com/KAANUSHAN' target='_blank' rel='noopener noreferrer'>
+              <img src={Face} alt='Facebook' className='link' />
             </a>
           </div>
         </form>
