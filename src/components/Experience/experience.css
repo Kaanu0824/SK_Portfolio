@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 .educationTitle {
@@ -60,7 +61,8 @@
   }
   
   .timeline-content {
-    background-color: #1f2a32;
+    /* background-color: #1f2a32; */
+    background: linear-gradient(90deg,  rgb(164, 159, 159) 10% , rgb(115, 151, 202) 100%);
     padding: 20px;
     border-radius: 8px;
     position: relative;

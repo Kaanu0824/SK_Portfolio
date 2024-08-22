@@ -42,7 +42,8 @@
    width: 15rem;
    margin: 1rem;
    border-radius: 0.5rem;
-   background: #1f2a32;
+   /* background: #1f2a32; */
+   background: linear-gradient(90deg,  rgb(164, 159, 159) 10% , rgb(115, 151, 202) 100%);
 }
 
 .educationBarImg{
