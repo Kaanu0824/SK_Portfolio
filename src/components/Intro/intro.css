@@ -9,7 +9,7 @@
 
 .bg {
   position: absolute;
-  top: 10rem;
+  top: 5rem;
   right: 0rem;
   z-index: -1;
   object-fit: cover;
