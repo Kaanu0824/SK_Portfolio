@@ -1,10 +1,10 @@
 import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react';
-// import Face from '../../assets/face.png';
-// import Git from '../../assets/github.jpeg';
-// import Insta from '../../assets/ins.png';
-// import Linke from '../../assets/linke.png';
-// import What from '../../assets/What.webp';
+import Face from '../../assets/face.png';
+import Git from '../../assets/github.jpeg';
+import Insta from '../../assets/ins.png';
+import Linke from '../../assets/linke.png';
+import What from '../../assets/What.webp';
 import './contact.css';
 
 const Contact = () => {
@@ -41,7 +41,7 @@ const Contact = () => {
           <textarea name='message' rows='5' className='msg' placeholder='Your Feedback' required />
           <button type='submit' className='submitBtn'>Submit</button>
 
-          {/* <div className='links'>
+          <div className='links'>
             <a href='https://www.linkedin.com/in/kaanushan-sivarasa/' target='_blank' rel='noopener noreferrer'>
               <img src={Linke} alt='LinkedIn' className='link' />
             </a>
@@ -57,7 +57,7 @@ const Contact = () => {
             <a href='https://web.facebook.com/KAANUSHAN' target='_blank' rel='noopener noreferrer'>
               <img src={Face} alt='Facebook' className='link' />
             </a>
-          </div> */}
+          </div>
         </form>
       </div>
     </span>
