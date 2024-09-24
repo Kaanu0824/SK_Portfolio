@@ -9,12 +9,22 @@
 
 .bg {
   position: absolute;
+  top: -10rem;
+  right:-6rem;
+  z-index: -1;
+  object-fit: cover;
+  height: 65rem;
+}
+
+/* .bg {
+  position: absolute;
   top: 5rem;
   right: 0rem;
   z-index: -1;
   object-fit: cover;
   height: 55rem;
-}
+} */
+
 
 .introcontent {
   height: 100vh;
@@ -72,10 +82,16 @@
 @media screen and (max-width: 430px) {
 
   .bg {
-      right: -10vw;
-      opacity: 0.3;
+      right: -25vw;
+      opacity: 0.5;
       filter: blur;
   }
+
+  /* .bg {
+    right: -10vw;
+    opacity: 0.3;
+    filter: blur;
+  } */
   
   .introcontent {
       font-size: 10vw;

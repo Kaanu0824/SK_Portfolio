@@ -38,8 +38,8 @@
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
-    /* background: #1f2a32; */
-    background: linear-gradient(90deg,  rgb(164, 159, 159) 10% , rgb(115, 151, 202) 100%);
+    background: #1f2a32;
+    /* background: linear-gradient(90deg,  rgb(164, 159, 159) 10% , rgb(115, 151, 202) 100%); */
 }
 
 .aboutBarImg{

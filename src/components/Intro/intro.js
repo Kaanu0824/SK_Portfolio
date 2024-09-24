@@ -1,5 +1,6 @@
 import React from 'react';
-import bg from '../../assets/intro-1.png';
+// import bg from '../../assets/intro-1.png';
+import bg from '../../assets/Convo.png';
 import './intro.css';
 
 function Intro() {
@@ -15,7 +16,7 @@ function Intro() {
           appealing and user-friendly websites.
         </p>
         <a
-          href="https://drive.google.com/file/d/1eqHI1ydMHSqz6wBjbFnJYWa8qMj1bdr9/view?usp=share_link"
+          href="https://drive.google.com/file/d/16P-LE9_G8r0Fj0LyvGt5ZhBrSrBZ0PNS/view?usp=share_link"
           target="_blank"
           rel="noopener noreferrer"
         >

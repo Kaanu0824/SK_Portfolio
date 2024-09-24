@@ -6,6 +6,8 @@ import './education.css'
 
 
 function Education() {
+
+    
   return (
     <section id='education'>
         <span className='educationTitle' > Education </span>
