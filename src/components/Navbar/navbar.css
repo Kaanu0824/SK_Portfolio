@@ -10,7 +10,9 @@
     position: sticky;
     top: 0;
     z-index: 3;
-    background: black;
+    /* background: black; */
+    background: #0a1822;
+    
 
 }
 
@@ -26,9 +28,11 @@
 }
 
 .desktopMenuListItem:hover {
-    color: yellow;
+    /* color: yellow; */
+    color: #22cfbe ;
     padding-bottom: 0.5rem;
-    border-bottom:3px solid yellow ;
+    /* border-bottom:3px solid yellow ; */
+    border-bottom:3px solid #22cfbe ;
 }
 
 .desktopmenuBtn {
@@ -62,8 +66,10 @@
 }
 
 .active {
-    color: yellow;
-    border-bottom: 3px solid yellow;
+    /* color: yellow; */
+    color: #22cfbe ;
+    /* border-bottom: 3px solid yellow; */
+    border-bottom:3px solid #22cfbe ;
     padding-bottom: 0.5rem;
 }
 

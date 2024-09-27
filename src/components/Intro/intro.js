@@ -1,6 +1,6 @@
 import React from 'react';
-// import bg from '../../assets/intro-1.png';
-import bg from '../../assets/Convo.png';
+import bg from '../../assets/intro-1.png';
+// import bg from '../../assets/Convo.png';
 import './intro.css';
 
 function Intro() {

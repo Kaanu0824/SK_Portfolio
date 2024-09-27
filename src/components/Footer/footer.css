@@ -1,7 +1,8 @@
 .footer {
     width: 100vw;
     height: 4rem;
-    background: rgb(20, 20, 20);
+    /* background: rgb(20, 20, 20); */
+    background: #0a1822;
     display: flex;
     align-items: center;
     justify-content: center;
