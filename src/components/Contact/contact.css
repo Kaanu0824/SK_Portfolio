@@ -47,6 +47,7 @@
 .submitBtn {
     /* background:#FFD700; */
     background: #22cfbe ;
+    color: white;
     border: none;
     padding: 0.75rem 3rem;
     border-radius: 1rem;
