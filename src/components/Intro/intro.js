@@ -9,9 +9,11 @@ function Intro() {
       <div className="introcontent">
         <span className="hello"> Hello </span>
         <span className="introText">
-          <span className="typingText">I’m Kaanushan </span> <br /> Software Engineer
+          <span className="typingText">I’m Kaanushan </span> 
         </span>
+        <span className="introText"> Software Engineer </span>
         <p className="IntroPara">
+          <h1> </h1>
           I am a Skilled Web Designer with experience in creating visually <br/>
           appealing and user-friendly websites.
         </p>
