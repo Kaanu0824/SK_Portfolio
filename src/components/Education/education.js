@@ -11,10 +11,27 @@ function Education() {
   return (
     <section id='education'>
         <span className='educationTitle' > Education </span>
-        <span className='educationDesc'> I completed a BSc (Hons) in Software Engineering at the Sri Lanka Institute of Information Technology, specializing in Information Technology. Prior to this, I finished my Advanced Level in the Physical Science stream at Jaffna Hindu College and my Ordinary Level at Kodikamam Thirunavukarasu Central College. </span>
+    
+            <span className='educationDesc'> 
+                I am a proud graduate of the Sri Lanka Institute of Information Technology (SLIIT), where I earned a BSc (Hons) in Software Engineering, specializing in Information Technology. My academic foundation was built at Jaffna Hindu College, where I pursued my Advanced Level in the Physical Science stream, and Kodikamam Thirunavukarasu Central College, where I completed my Ordinary Level studies.  
+            </span>  
+
+            <span className='educationDesc'> 
+                In 2025, I am set to begin an exciting new chapter by pursuing an MSc in Computer Science at the University of Hertfordshire in the UK. I look forward to further refining my expertise and contributing to innovative advancements in the field.  
+            </span>
+
+       
         <div className='educationBars'>
+
+            {/* <div className='educationBar'>
+                <img src={MSC} alt='MSC' className='educationBarImg'/>
+                <div className='educationBarText'>
+                    <h2> Master of Science  </h2>
+                    <h3>2025 - Present </h3>
+                </div>
+            </div> */}
             
-        <div className='educationBar'>
+            <div className='educationBar'>
                 <img src={BSC} alt='BSC' className='educationBarImg'/>
                 <div className='educationBarText'>
                     <h2> Bachelor Degree  </h2>
@@ -30,6 +47,21 @@ function Education() {
                 </div>
             </div>
 
+        </div>
+
+        {/* School Details */}
+
+        <div className='educationBars'>
+{/* 
+            <div className='educationBar'>
+                <img src={AL} alt='AL' className='educationBarImg'/>
+                <div className='educationBarText'>
+                    <h2> Advanced Level  </h2>
+                    <h3>2017 - 2019</h3>
+                </div>
+            </div> */}
+
+
             <div className='educationBar'>
                 <img src={OL} alt='OL' className='educationBarImg'/>
                 <div className='educationBarText'>
@@ -39,6 +71,7 @@ function Education() {
             </div>
 
         </div>
+
     </section>
   )
 }

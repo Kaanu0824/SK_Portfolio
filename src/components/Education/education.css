@@ -15,69 +15,74 @@
     font-weight: 600;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
-
 }
 
 .educationDesc {
     font-weight: 300;
     font-size: 1.5rem;
-    /* max-width: 50rem; */
     padding: 0 2rem;
     text-align: justify;
-   
 }
 
-.educationBars{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  max-width: 70rem;
-  color:black;
-
+.educationBars {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap to the next line if needed */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 70rem;
+    color: black;
+    gap: 1rem; /* Adds consistent spacing between items */
 }
 
 .educationBar {
-   object-fit: cover;
-   height: 13rem;
-   width: 15rem;
-   margin: 1rem;
-   border-radius: 0.5rem;
-   /* background: #1f2a32; */
-   /* background: linear-gradient(90deg,  rgb(164, 159, 159) 10% , rgb(115, 151, 202) 100%); */
-   background: white
-}
-
-.educationBarImg{
-    height:5rem ;
-    border-radius: 0.5rem;
-    width: 5rem;
+    object-fit: cover;
+    height: 13rem;
+    width: 15rem;
     margin: 1rem;
-
+    border-radius: 0.5rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.educationText>p{
+.educationBarImg {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.educationText > p {
     font-size: 1rem;
     font-weight: 200;
     text-align: center;
 }
 
-@media screen and (max-width:430px) {
-    .educationBarText>p {
+@media screen and (max-width: 430px) {
+    .educationBars {
+        gap: 1rem; /* Reduce spacing between items for smaller screens */
+    }
+    .educationBar {
+        width: 60%; /* Adjust width for better fit on smaller screens */
+        margin: 0.5rem auto; /* Center and reduce margin */
+    }
+    .educationBarText > p {
         font-size: 2vw;
     }
-    .educationBarImg{
-        height: 5rem;
-        width: 5rem;
+    .educationBarImg {
+        height: 4rem; /* Slightly reduce size for mobile */
+        width: 4rem;
     }
-    .educationBarText >h2 {
+    .educationBarText > h2 {
         font-size: 4vw;
     }
-    .educationBarText >h3 {
+    .educationBarText > h3 {
         font-size: 2vw;
     }
-    .educationDesc{
+    .educationDesc {
         font-size: 1rem;
     }
-
 }
