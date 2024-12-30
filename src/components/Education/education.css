@@ -63,17 +63,17 @@
 
 @media screen and (max-width: 430px) {
     .educationBars {
-        gap: 1rem; /* Reduce spacing between items for smaller screens */
+        gap: 0rem; 
     }
     .educationBar {
-        width: 60%; /* Adjust width for better fit on smaller screens */
-        margin: 0.5rem auto; /* Center and reduce margin */
+        width: 60%; 
+        margin: 0.5rem auto; 
     }
     .educationBarText > p {
         font-size: 2vw;
     }
     .educationBarImg {
-        height: 6rem; /* Slightly reduce size for mobile */
+        height: 6rem; 
         width: 6rem;
     }
     .educationBarText > h2 {
