@@ -49,8 +49,8 @@
 }
 
 .educationBarImg {
-    height: 5rem;
-    width: 5rem;
+    height: 5.5rem;
+    width: 5.5rem;
     border-radius: 0.5rem;
     margin: 1rem;
 }
@@ -73,14 +73,14 @@
         font-size: 2vw;
     }
     .educationBarImg {
-        height: 4rem; /* Slightly reduce size for mobile */
-        width: 4rem;
+        height: 6rem; /* Slightly reduce size for mobile */
+        width: 6rem;
     }
     .educationBarText > h2 {
-        font-size: 4vw;
+        font-size: 6vw;
     }
     .educationBarText > h3 {
-        font-size: 2vw;
+        font-size: 4vw;
     }
     .educationDesc {
         font-size: 1rem;
