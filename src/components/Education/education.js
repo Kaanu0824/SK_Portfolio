@@ -1,6 +1,7 @@
 import React from 'react'
 import AL from '../../assets/jhc.png'
 import OL from '../../assets/ktcc.png'
+import MSC from '../../assets/msc.png'
 import BSC from '../../assets/sliit.png'
 import './education.css'
 
@@ -23,13 +24,13 @@ function Education() {
        
         <div className='educationBars'>
 
-            {/* <div className='educationBar'>
+            <div className='educationBar'>
                 <img src={MSC} alt='MSC' className='educationBarImg'/>
                 <div className='educationBarText'>
                     <h2> Master of Science  </h2>
                     <h3>2025 - Present </h3>
                 </div>
-            </div> */}
+            </div>
             
             <div className='educationBar'>
                 <img src={BSC} alt='BSC' className='educationBarImg'/>
