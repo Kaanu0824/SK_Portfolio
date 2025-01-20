@@ -27,7 +27,7 @@ function Education() {
             <div className='educationBar'>
                 <img src={MSC} alt='MSC' className='educationBarImg'/>
                 <div className='educationBarText'>
-                    <h2> Master of Science  </h2>
+                    <h2> Master of Science </h2>
                     <h3>2025 - Present </h3>
                 </div>
             </div>
@@ -35,7 +35,7 @@ function Education() {
             <div className='educationBar'>
                 <img src={BSC} alt='BSC' className='educationBarImg'/>
                 <div className='educationBarText'>
-                    <h2> Bachelor Degree  </h2>
+                    <h2> Bachelor of Science </h2>
                     <h3>2020 - 2024</h3>
                 </div>
             </div>
