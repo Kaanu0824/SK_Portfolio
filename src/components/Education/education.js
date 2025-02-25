@@ -14,11 +14,11 @@ function Education() {
         <span className='educationTitle' > Education </span>
     
             <span className='educationDesc'> 
-                I am a proud graduate of the Sri Lanka Institute of Information Technology (SLIIT), where I earned a BSc (Hons) in Software Engineering, specializing in Information Technology. My academic foundation was built at Jaffna Hindu College, where I pursued my Advanced Level in the Physical Science stream, and Kodikamam Thirunavukarasu Central College, where I completed my Ordinary Level studies.  
+                I am a proud graduate of the Sri Lanka Institute of Information Technology (SLIIT), where I earned a BSc (Hons) in Information Technology, specializing in Information Technology. My academic foundation was built at Jaffna Hindu College, where I pursued my Advanced Level in the Physical Science stream, and Kodikamam Thirunavukarasu Central College, where I completed my Ordinary Level studies.  
             </span>  
 
             <span className='educationDesc'> 
-                In 2025, I am set to begin an exciting new chapter by pursuing an MSc in Computer Science at the University of Hertfordshire in the UK. I look forward to further refining my expertise and contributing to innovative advancements in the field.  
+                In 2025, I am set to begin an exciting new chapter by pursuing an MSc in Software Engineering at the University of Hertfordshire in the UK. I look forward to further refining my expertise and contributing to innovative advancements in the field.  
             </span>
 
        
