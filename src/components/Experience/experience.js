@@ -12,7 +12,7 @@ function Experience() {
                 <FaBriefcase />
             </div>
             <div className='timeline-content'>
-                <h2> Intern Software Engineer - DH3 Solutions Private Limited</h2>
+                <h2> Intern Software Engineer - DH3 Solutions Private Limited ( Sri Lanka )</h2>
                 <span>June 2022 - February 2023 </span>
                 <p>
                     I worked as a front-end developer for the LB Finance wallet application, an ongoing project developed by DH3 Solutions Private Limited 
