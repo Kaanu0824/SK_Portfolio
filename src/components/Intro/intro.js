@@ -8,17 +8,16 @@ function Intro() {
     <section id="intro">
       <div className="introcontent">
         <span className="hello"> Hello </span>
-        <span className="introText">
+        {/* <span className="introText"> */}
           <span className="typingText">I’m Kaanushan </span> 
-        </span>
-        <span className="introText"> Software Engineer </span>
+        {/* </span> */}
+        <h4>Software Engineer</h4>
         <p className="IntroPara">
-          <h1> </h1>
           I am a Skilled Web Designer with experience in creating visually <br/>
           appealing and user-friendly websites.
         </p>
         <a
-          href="https://drive.google.com/file/d/17rwHx5axsIo8Gk-xHu68ditku-fsZ4_L/view?usp=share_link"
+          href="https://drive.google.com/file/d/1iPx8HemTRX9Ym0rRAERVBQB2QS5DJOCF/view?usp=share_link"
           target="_blank"
           rel="noopener noreferrer"
         >
