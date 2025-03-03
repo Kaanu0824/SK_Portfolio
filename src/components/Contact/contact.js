@@ -48,7 +48,7 @@ const Contact = () => {
             <a href='https://github.com/Kaanu0824' target='_blank' rel='noopener noreferrer'>
               <img src={Git} alt='GitHub' className='link' />
             </a>
-            <a href='https://wa.me/+94774549953' target='_blank' rel='noopener noreferrer'>
+            <a href='https://wa.me/+447919056712' target='_blank' rel='noopener noreferrer'>
               <img src={What} alt='Whatsapp' className='link' />
             </a>
             <a href='https://www.instagram.com/kaanu_sk_/' target='_blank' rel='noopener noreferrer'>
