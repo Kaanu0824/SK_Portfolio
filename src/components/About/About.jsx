@@ -1,7 +1,6 @@
 import React from 'react';
 import { aboutParagraphs, services, skills } from '../../data/portfolio';
 import { useReveal, useStaggerReveal } from '../../hooks/useReveal';
-import './About.css';
 
 const About = () => {
   const leftRef   = useReveal();
