@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { personal } from '../../data/portfolio';
-import './Navbar.css';
 
 const navLinks = [
   { href: '#about',      label: 'About' },
