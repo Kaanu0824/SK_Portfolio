@@ -1,6 +1,5 @@
 import React from 'react';
 import { marqueeItems } from '../../data/portfolio';
-import './Marquee.css';
 
 const Marquee = () => {
   const doubled = [...marqueeItems, ...marqueeItems];

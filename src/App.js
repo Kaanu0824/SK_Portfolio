@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './styles/globals.css';
 
 import Cursor   from './components/Cursor/Cursor';
 import Navbar   from './components/Navbar/Navbar';

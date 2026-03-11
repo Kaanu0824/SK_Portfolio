@@ -3,9 +3,8 @@ import { useEffect, useRef } from 'react';
 /**
  * useReveal — attaches an IntersectionObserver to the returned ref.
  * When the element enters the viewport, adds the "visible" class.
- * @param {object} options - IntersectionObserver options
  */
-export function useReveal(options = {}) {
+export function useReveal() {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -20,22 +19,21 @@ export function useReveal(options = {}) {
           }
         });
       },
-      { threshold: 0.12, ...options }
+      { threshold: 0.12 }
     );
 
-    // Observe element and all children with .reveal class
     observer.observe(el);
     const children = el.querySelectorAll('.reveal');
     children.forEach((child) => observer.observe(child));
 
     return () => observer.disconnect();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return ref;
 }
 
 /**
- * useStaggerReveal — like useReveal but adds staggered delays to children
+ * useStaggerReveal — adds staggered delays to direct children
  */
 export function useStaggerReveal(delay = 0.07) {
   const ref = useRef(null);

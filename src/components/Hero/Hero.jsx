@@ -1,7 +1,6 @@
 import React from 'react';
 import { personal, stats, socials } from '../../data/portfolio';
 import photo from '../../assets/kaanushan.png';
-import './Hero.css';
 
 const Hero = () => {
   const linkedin = socials.find(s => s.label === 'LinkedIn');
