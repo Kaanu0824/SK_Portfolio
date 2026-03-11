@@ -1,7 +1,6 @@
 import React from 'react';
 import { experience } from '../../data/portfolio';
 import { useReveal } from '../../hooks/useReveal';
-import './Experience.css';
 
 const Experience = () => {
   const listRef = useReveal();

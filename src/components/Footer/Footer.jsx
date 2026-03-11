@@ -1,6 +1,5 @@
 import React from 'react';
 import { personal, socials } from '../../data/portfolio';
-import './Footer.css';
 
 const footerLinks = socials.filter(s =>
   ['LinkedIn', 'GitHub', 'Instagram'].includes(s.label)

@@ -1,7 +1,6 @@
 import React from 'react';
 import { education, educationNote } from '../../data/portfolio';
 import { useStaggerReveal } from '../../hooks/useReveal';
-import './Education.css';
 
 const Education = () => {
   const gridRef = useStaggerReveal(0.1);

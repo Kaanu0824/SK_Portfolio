@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { personal } from '../../data/portfolio';
 
 const navLinks = [
@@ -26,10 +26,11 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
-      <a className="nav-logo" href="#" onClick={(e) => handleNav(e, '#hero')}>
+      {/* Fixed: use button instead of anchor for scroll-to-top */}
+      <button className="nav-logo" onClick={(e) => handleNav(e, '#hero')}>
         <span className="nav-dot" />
         {personal.firstName}
-      </a>
+      </button>
 
       {/* Desktop links */}
       <ul className="nav-links">
