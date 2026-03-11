@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
-import { socials, personal, emailjsConfig } from '../../data/portfolio';
-import { useReveal, useStaggerReveal } from '../../hooks/useReveal';
-import './Contact.css';
+import { socials, emailjsConfig } from '../../data/portfolio';
+import { useStaggerReveal } from '../../hooks/useReveal';
 
 const Contact = () => {
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
@@ -13,7 +12,6 @@ const Contact = () => {
     setStatus('sending');
 
     try {
-      // Dynamically load EmailJS
       if (!window.emailjs) {
         await new Promise((resolve, reject) => {
           const script = document.createElement('script');
@@ -95,10 +93,10 @@ const Contact = () => {
           </button>
 
           {status === 'success' && (
-            <p className="form-success">✓ Message sent successfully! I'll get back to you soon.</p>
+            <p className="form-success">✓ Message sent! I'll get back to you soon.</p>
           )}
           {status === 'error' && (
-            <p className="form-error">Something went wrong. Please try again or email me directly.</p>
+            <p className="form-error">Something went wrong. Please try again.</p>
           )}
         </form>
       </div>
