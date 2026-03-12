@@ -1,6 +1,5 @@
-import React from 'react';
-import { personal, stats, socials } from '../../data/portfolio';
 import photo from '../../assets/kaanushan.png';
+import { personal, socials, stats } from '../../data/portfolio';
 
 const Hero = () => {
   const linkedin = socials.find(s => s.label === 'LinkedIn');
@@ -25,7 +24,7 @@ const Hero = () => {
 
         <h1 className="hero-name">
           {personal.firstName}
-          <span className="hero-name-ghost">Sivarasa</span>
+          <span className="hero-name-ghost">Sivarajah</span>
         </h1>
 
         <p className="hero-role">{personal.role}</p>
