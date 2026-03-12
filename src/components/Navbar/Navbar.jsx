@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { personal } from '../../data/portfolio';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const navLinks = [
   { href: '#about',      label: 'About' },
@@ -9,7 +10,7 @@ const navLinks = [
   { href: '#contact',    label: 'Contact' },
 ];
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -27,7 +28,6 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
-      {/* Fixed: use button instead of anchor for scroll-to-top */}
       <button className="nav-logo" onClick={(e) => handleNav(e, '#hero')}>
         <span className="nav-dot" />
         {personal.firstName}
@@ -44,14 +44,18 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <a
-        className="nav-cta"
-        href={personal.resumeUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Resume ↗
-      </a>
+      {/* Right side: Theme toggle + Resume CTA */}
+      <div className="nav-right">
+        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+        <a
+          className="nav-cta"
+          href={personal.resumeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume ↗
+        </a>
+      </div>
 
       {/* Mobile hamburger */}
       <button
@@ -69,6 +73,12 @@ const Navbar = () => {
             {link.label}
           </a>
         ))}
+        <div className="mobile-theme-row">
+          <span className="mobile-theme-label">
+            {theme === 'dark' ? 'Dark Mode' : 'Light Mode'}
+          </span>
+          <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+        </div>
         <a
           className="mobile-cta"
           href={personal.resumeUrl}

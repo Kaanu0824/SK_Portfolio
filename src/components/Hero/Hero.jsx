@@ -1,6 +1,7 @@
-import photo from '../../assets/kaanushan.png';
-import { personal, socials, stats } from '../../data/portfolio';
+import React from 'react';
 import './Hero.css';
+import { personal, stats, socials } from '../../data/portfolio';
+import photo from '../../assets/kaanushan.png';
 
 const Hero = () => {
   const linkedin = socials.find(s => s.label === 'LinkedIn');
@@ -47,7 +48,7 @@ const Hero = () => {
           <img
             className="hpw-img"
             src={photo}
-            alt="Kaanushan Sivarasa"
+            alt="Kaanushan Sivarajah"
           />
           <div className="hpw-badge">📍 {personal.location}</div>
         </div>
@@ -59,7 +60,7 @@ const Hero = () => {
               <img
                 className="pc-avatar"
                 src={photo}
-                alt="Kaanushan Sivarasa"
+                alt="Kaanushan Sivarajah"
               />
             </div>
             <div>

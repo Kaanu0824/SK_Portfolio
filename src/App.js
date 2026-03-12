@@ -1,22 +1,23 @@
 import React, { useEffect } from 'react';
 
-import Cursor   from './components/Cursor/Cursor';
-import Navbar   from './components/Navbar/Navbar';
-import Hero     from './components/Hero/Hero';
-import Marquee  from './components/Marquee/Marquee';
-import About    from './components/About/About';
+import Cursor      from './components/Cursor/Cursor';
+import Navbar      from './components/Navbar/Navbar';
+import Hero        from './components/Hero/Hero';
+import Marquee     from './components/Marquee/Marquee';
+import About       from './components/About/About';
 import Education   from './components/Education/Education';
 import Experience  from './components/Experience/Experience';
 import Contact     from './components/Contact/Contact';
 import Footer      from './components/Footer/Footer';
 
 import { useCursor } from './hooks/useCursor';
+import { useTheme }  from './hooks/useTheme';
 
 function App() {
-  // Activate cursor tracking after mount
   useCursor();
+  const { theme, toggleTheme } = useTheme();
 
-  // Global reveal observer for any .reveal not handled by component hooks
+  // Global reveal observer
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -33,7 +34,7 @@ function App() {
   return (
     <>
       <Cursor />
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero />
         <Marquee />
