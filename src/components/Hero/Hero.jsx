@@ -25,7 +25,7 @@ const Hero = () => {
 
         <h1 className="hero-name">
           {personal.firstName}
-          <span className="hero-name-ghost">Sivarasa</span>
+          <span className="hero-name-ghost">Sivarajah</span>
         </h1>
 
         <p className="hero-role">{personal.role}</p>

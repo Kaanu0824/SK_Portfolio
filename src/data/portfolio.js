@@ -1,7 +1,7 @@
 // ── All portfolio content data ──
 
 export const personal = {
-  name: 'Kaanushan Sivarasa',
+  name: 'Kaanushan Sivarajah',
   firstName: 'Kaanushan',
   role: 'Software Engineer',
   tagline: 'Open to opportunities · UK',
