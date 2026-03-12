@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Navbar.css';
 import { personal } from '../../data/portfolio';
 
 const navLinks = [

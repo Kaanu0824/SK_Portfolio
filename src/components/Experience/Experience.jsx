@@ -1,4 +1,5 @@
 import React from 'react';
+import './Experience.css';
 import { experience } from '../../data/portfolio';
 import { useReveal } from '../../hooks/useReveal';
 

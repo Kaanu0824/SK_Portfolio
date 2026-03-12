@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import './Contact.css';
 import { socials, emailjsConfig } from '../../data/portfolio';
 import { useStaggerReveal } from '../../hooks/useReveal';
 

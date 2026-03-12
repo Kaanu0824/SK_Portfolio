@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css';
 import { aboutParagraphs, services, skills } from '../../data/portfolio';
 import { useReveal, useStaggerReveal } from '../../hooks/useReveal';
 

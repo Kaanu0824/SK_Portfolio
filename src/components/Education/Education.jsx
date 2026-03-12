@@ -1,4 +1,5 @@
 import React from 'react';
+import './Education.css';
 import { education, educationNote } from '../../data/portfolio';
 import { useStaggerReveal } from '../../hooks/useReveal';
 

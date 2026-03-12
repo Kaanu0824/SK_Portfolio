@@ -1,4 +1,5 @@
 import React from 'react';
+import './Marquee.css';
 import { marqueeItems } from '../../data/portfolio';
 
 const Marquee = () => {

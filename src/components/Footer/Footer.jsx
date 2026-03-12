@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.css';
 import { personal, socials } from '../../data/portfolio';
 
 const footerLinks = socials.filter(s =>
