@@ -278,3 +278,31 @@ section {
 [data-theme='light'] .hero-actions {
   transition: none;
 }
+
+/* ── Justified text across all sections ── */
+.about-para,
+.section-sub,
+.edu-note,
+.edu-school,
+.exp-summary,
+.exp-bullets li,
+.exp-company,
+.scard-body p,
+.contact-sub,
+.hero-desc,
+.edu-degree {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Keep centred text centred on mobile hero */
+@media (max-width: 960px) {
+  .hero-desc,
+  .contact-sub {
+    text-align: center;
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
+}
