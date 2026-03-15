@@ -1,4 +1,4 @@
-/* ── Education ── */
+
 .education { background: var(--bg); }
 
 .edu-grid {
@@ -32,6 +32,42 @@
   background: linear-gradient(90deg, var(--accent), var(--accent2));
 }
 
+
+.edu-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+}
+
+.edu-logo-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 4px;
+}
+
+.edu-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
+
+[data-theme='light'] .edu-logo-wrap {
+  background: rgba(0,0,0,0.04);
+}
+[data-theme='light'] .edu-logo {
+  filter: brightness(0.9) contrast(1.1);
+}
+
 .edu-badge {
   display: inline-block;
   font-family: var(--mono);
@@ -40,12 +76,11 @@
   letter-spacing: 0.1em;
   padding: 0.22rem 0.6rem;
   border-radius: 3px;
-  margin-bottom: 1rem;
 }
-.edu-badge--msc { background: rgba(0,245,196,0.12); color: var(--accent); }
+.edu-badge--msc { background: rgba(0,245,196,0.12);   color: var(--accent); }
 .edu-badge--bsc { background: rgba(124,106,255,0.12); color: var(--accent2); }
 .edu-badge--al  { background: rgba(255,106,106,0.1);  color: var(--accent3); }
-.edu-badge--ol  { background: rgba(255,255,255,0.06); color: var(--muted2); }
+.edu-badge--ol  { background: rgba(120, 118, 118, 0.06); color: var(--muted2); }
 
 .edu-degree {
   font-size: 1rem;
@@ -77,4 +112,5 @@
 
 @media (max-width: 960px) {
   .edu-grid { grid-template-columns: 1fr; }
+  .edu-logo-wrap { width: 48px; height: 48px; }
 }

@@ -1,7 +1,18 @@
-import React from 'react';
-import './Education.css';
 import { education, educationNote } from '../../data/portfolio';
 import { useStaggerReveal } from '../../hooks/useReveal';
+import './Education.css';
+
+import jhcLogo from '../../assets/jhc.jpg';
+import ktccLogo from '../../assets/ktcc.jpg';
+import mscLogo from '../../assets/msc.jpg';
+import sliitLogo from '../../assets/sliit.jpg';
+
+const logoMap = {
+  msc:  mscLogo,
+  bsc:  sliitLogo,
+  al:   jhcLogo,
+  ol:   ktccLogo,
+};
 
 const Education = () => {
   const gridRef = useStaggerReveal(0.1);
@@ -19,9 +30,20 @@ const Education = () => {
             className={`edu-card hover-target${edu.highlight ? ' edu-card--highlight' : ''}`}
             key={edu.degree}
           >
-            <span className={`edu-badge edu-badge--${edu.badgeClass}`}>
-              {edu.badge}
-            </span>
+            
+            <div className="edu-card-top">
+              <div className="edu-logo-wrap">
+                <img
+                  src={logoMap[edu.badgeClass]}
+                  alt={edu.school}
+                  className="edu-logo"
+                />
+              </div>
+              <span className={`edu-badge edu-badge--${edu.badgeClass}`}>
+                {edu.badge}
+              </span>
+            </div>
+
             <h3 className="edu-degree">{edu.degree}</h3>
             <p className="edu-school">{edu.school}</p>
             <p className="edu-period">{edu.period}</p>
