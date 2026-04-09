@@ -88,6 +88,57 @@ export const aboutParagraphs = [
   `Currently levelling up with an MSc in Software Engineering at the University of Hertfordshire, UK.`,
 ];
 
+export const projects = [
+  {
+    title: 'EduBridge — Student Wellbeing AI',
+    tag: 'MSc Project',
+    tagClass: 'featured',
+    icon: '🧠',
+    desc: 'A multimodal AI system for real-time student stress detection using face emotion recognition, voice stress analysis, and an NLP-powered support chatbot. Built as a full-stack MSc research application.',
+    stack: ['Python', 'Flask', 'TensorFlow', 'React 18', 'OpenCV', 'Librosa', 'scikit-learn'],
+    githubUrl: 'https://github.com/Kaanu0824/Edubridge-FullStack-MSC',
+    featured: true,
+    highlights: [
+      'CNN-based real-time face emotion detection (6 emotions)',
+      'MFCC voice stress classifier with Dense neural network',
+      'NLP chatbot across 14 student wellbeing categories',
+      'Fused stress scoring with downloadable session reports',
+    ],
+  },
+  {
+    title: 'Task Management Application',
+    tag: 'Full Stack',
+    tagClass: 'fullstack',
+    icon: '✅',
+    desc: 'A full-stack task management app with JWT authentication, allowing users to create, update, delete and track daily tasks through a clean, responsive dashboard.',
+    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'CSS'],
+    githubUrl: 'https://github.com/Kaanu0824/Task-Management-Application',
+    featured: false,
+    highlights: [
+      'Secure user authentication with JWT',
+      'Full CRUD task operations',
+      'Responsive dashboard UI',
+      'Context API for state management',
+    ],
+  },
+  {
+    title: 'Employee Shift Tracker',
+    tag: 'Web App',
+    tagClass: 'webapp',
+    icon: '🕐',
+    desc: 'A web application for tracking and managing employee shifts. Enables managers to schedule, monitor and manage staff working hours through an intuitive interface.',
+    stack: ['JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'HTML', 'CSS'],
+    githubUrl: 'https://github.com/Kaanu0824/Employee-Shift-Tracker-Web-Application',
+    featured: false,
+    highlights: [
+      'Employee shift scheduling & management',
+      'Real-time shift tracking dashboard',
+      'Role-based access for managers & staff',
+      'Clean responsive interface',
+    ],
+  },
+];
+
 export const education = [
   {
     badge: 'MSc · Current',

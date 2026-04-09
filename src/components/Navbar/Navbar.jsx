@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import './Navbar.css';
+import { useEffect, useState } from 'react';
 import { personal } from '../../data/portfolio';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import './Navbar.css';
 
 const navLinks = [
   { href: '#about',      label: 'About' },
   { href: '#education',  label: 'Education' },
   { href: '#experience', label: 'Experience' },
   { href: '#contact',    label: 'Contact' },
+  { href: '#projects', label: 'Projects' },
 ];
 
 const Navbar = ({ theme, toggleTheme }) => {

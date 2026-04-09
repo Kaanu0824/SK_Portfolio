@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
-import Cursor      from './components/Cursor/Cursor';
-import Navbar      from './components/Navbar/Navbar';
-import Hero        from './components/Hero/Hero';
-import Marquee     from './components/Marquee/Marquee';
-import About       from './components/About/About';
-import Education   from './components/Education/Education';
-import Experience  from './components/Experience/Experience';
-import Contact     from './components/Contact/Contact';
-import Footer      from './components/Footer/Footer';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Cursor from './components/Cursor/Cursor';
+import Education from './components/Education/Education';
+import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
+import Hero from './components/Hero/Hero';
+import Marquee from './components/Marquee/Marquee';
+import Navbar from './components/Navbar/Navbar';
+import Projects from './components/Projects/Projects';
 
 import { useCursor } from './hooks/useCursor';
-import { useTheme }  from './hooks/useTheme';
+import { useTheme } from './hooks/useTheme';
 
 function App() {
   useCursor();
@@ -39,6 +40,7 @@ function App() {
         <Hero />
         <Marquee />
         <About />
+        <Projects />
         <Education />
         <Experience />
         <Contact />
