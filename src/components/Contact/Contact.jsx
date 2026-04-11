@@ -1,27 +1,36 @@
-import React, { useState, useRef } from 'react';
-import './Contact.css';
-import { socials, emailjsConfig } from '../../data/portfolio';
+import { useEffect, useRef, useState } from 'react';
+import { emailjsConfig, socials } from '../../data/portfolio';
 import { useStaggerReveal } from '../../hooks/useReveal';
+import './Contact.css';
 
 const Contact = () => {
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
   const formRef = useRef(null);
   const socialsRef = useStaggerReveal(0.07);
+  const emailjsLoaded = useRef(false);
+
+  // Load EmailJS SDK once on mount
+  useEffect(() => {
+    if (emailjsLoaded.current) return;
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+    script.async = true;
+    script.onload = () => {
+      window.emailjs.init(emailjsConfig.publicKey);
+      emailjsLoaded.current = true;
+    };
+    document.head.appendChild(script);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (status === 'sending') return;
     setStatus('sending');
 
     try {
+      // Wait for SDK if not yet loaded
       if (!window.emailjs) {
-        await new Promise((resolve, reject) => {
-          const script = document.createElement('script');
-          script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
-          script.onload = resolve;
-          script.onerror = reject;
-          document.head.appendChild(script);
-        });
-        window.emailjs.init(emailjsConfig.publicKey);
+        await new Promise((res) => setTimeout(res, 1000));
       }
 
       await window.emailjs.sendForm(
@@ -33,10 +42,17 @@ const Contact = () => {
       setStatus('success');
       formRef.current.reset();
     } catch (err) {
-      console.error(err);
+      console.error('EmailJS error:', err);
       setStatus('error');
     }
   };
+
+  const btnLabel = {
+    idle:    'Send Message →',
+    sending: 'Sending…',
+    success: '✓ Sent!',
+    error:   'Failed — try again',
+  }[status];
 
   return (
     <section id="contact" className="contact">
@@ -62,14 +78,14 @@ const Contact = () => {
           <div className="form-row">
             <input
               type="text"
-              name="user_name"
+              name="from_name"
               placeholder="Your Name"
               required
               disabled={status === 'sending'}
             />
             <input
               type="email"
-              name="user_email"
+              name="reply_to"
               placeholder="Your Email"
               required
               disabled={status === 'sending'}
@@ -84,20 +100,19 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="form-submit"
+            className={`form-submit${status === 'error' ? ' error' : ''}${status === 'success' ? ' success' : ''}`}
             disabled={status === 'sending' || status === 'success'}
           >
-            {status === 'sending' && 'Sending…'}
-            {status === 'success' && '✓ Sent!'}
-            {status === 'error'   && 'Failed — try again'}
-            {status === 'idle'    && 'Send Message →'}
+            {btnLabel}
           </button>
 
           {status === 'success' && (
             <p className="form-success">✓ Message sent! I'll get back to you soon.</p>
           )}
           {status === 'error' && (
-            <p className="form-error">Something went wrong. Please try again.</p>
+            <p className="form-error">
+              Something went wrong. Please check your EmailJS settings or email me directly.
+            </p>
           )}
         </form>
       </div>
