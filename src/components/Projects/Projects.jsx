@@ -1,9 +1,15 @@
-import { projects } from '../../data/portfolio';
-import { useStaggerReveal } from '../../hooks/useReveal';
+import React, { useState } from 'react';
 import './Projects.css';
+import { projects } from '../../data/portfolio';
+
+const FILTERS = ['All', 'AI', 'Full Stack', 'Java'];
 
 const Projects = () => {
-  const gridRef = useStaggerReveal(0.12);
+  const [active, setActive] = useState('All');
+
+  const filtered = active === 'All'
+    ? projects
+    : projects.filter(p => p.category === active);
 
   return (
     <section id="projects" className="projects">
@@ -15,14 +21,33 @@ const Projects = () => {
         real-world impact.
       </p>
 
-      <div className="projects-grid" ref={gridRef}>
-        {projects.map((project) => (
-          <div
-            className={`project-card${project.featured ? ' project-card--featured' : ''}`}
-            key={project.title}
+      {/* ── Filter Bar ── */}
+      <div className="projects-filter reveal">
+        {FILTERS.map(f => (
+          <button
+            key={f}
+            className={`filter-btn${active === f ? ' active' : ''}`}
+            onClick={() => setActive(f)}
           >
-            {/* Top accent line on featured */}
-            {project.featured && <div className="project-card-accent" />}
+            {f}
+            <span className="filter-count">
+              {f === 'All' ? projects.length : projects.filter(p => p.category === f).length}
+            </span>
+          </button>
+        ))}
+      </div>
+
+      {/* ── Grid ── */}
+      <div className="projects-grid">
+        {filtered.map((project, i) => (
+          <div
+            className={`project-card${project.featured && active === 'All' ? ' project-card--featured' : ''}`}
+            key={project.title}
+            style={{ animationDelay: `${i * 0.07}s` }}
+          >
+            {project.featured && active === 'All' && (
+              <div className="project-card-accent" />
+            )}
 
             {/* Header */}
             <div className="project-header">
@@ -38,19 +63,19 @@ const Projects = () => {
 
             {/* Highlights */}
             <ul className="project-highlights">
-              {project.highlights.map((h, i) => (
-                <li key={i}>{h}</li>
+              {project.highlights.map((h, idx) => (
+                <li key={idx}>{h}</li>
               ))}
             </ul>
 
             {/* Stack pills */}
             <div className="project-stack">
-              {project.stack.map((s) => (
+              {project.stack.map(s => (
                 <span className="stack-pill" key={s}>{s}</span>
               ))}
             </div>
 
-            {/* Footer link */}
+            {/* Footer */}
             <div className="project-footer">
               <a
                 className="project-github-btn"
@@ -67,7 +92,6 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* View all link */}
       <a
         className="projects-view-all reveal"
         href="https://github.com/Kaanu0824"
