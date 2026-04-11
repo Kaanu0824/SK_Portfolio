@@ -248,7 +248,7 @@ export const experience = [
 ];
 
 export const emailjsConfig = {
-  serviceId: 'Kaanu_1700',
+  serviceId: 'SK1700',
   templateId: 'template_v2do518',
   publicKey: '_Q0aljcJxeRDA8vMe',
 };
