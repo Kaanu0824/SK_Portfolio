@@ -18,7 +18,6 @@ function App() {
   useCursor();
   const { theme, toggleTheme } = useTheme();
 
-  // Global reveal observer
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -40,9 +39,9 @@ function App() {
         <Hero />
         <Marquee />
         <About />
+        <Experience />
         <Projects />
         <Education />
-        <Experience />
         <Contact />
       </main>
       <Footer />

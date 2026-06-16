@@ -5,7 +5,7 @@ export const personal = {
   firstName: 'Kaanushan',
   role: 'Software Engineer',
   tagline: 'Open to opportunities · UK',
-  location: 'Hatfield, United Kingdom',
+  location: 'London, United Kingdom /  Colombo, Sri Lanka',
   description:
     'A skilled web designer & developer passionate about building visually appealing, user-friendly experiences. Currently pursuing an MSc in Software Engineering at the University of Hertfordshire, UK.',
   resumeUrl:
@@ -14,7 +14,7 @@ export const personal = {
 };
 
 export const stats = [
-  { num: '1+', label: 'Yrs Exp' },
+  { num: '2+', label: 'Yrs Exp' },
   { num: '10+', label: 'Modules' },
   { num: '30%', label: '↑ Engage' },
 ];
@@ -231,6 +231,20 @@ export const education = [
 export const educationNote = `I am a proud graduate of SLIIT with a BSc (Hons) in Information Technology, specialising in IT. My academic foundation was built at Jaffna Hindu College (A/Ls, Physical Science stream) and Kodikamam Thirunavukarasu Central College (O/Ls). In 2025, I began an exciting new chapter pursuing an MSc in Software Engineering at the University of Hertfordshire, UK.`;
 
 export const experience = [
+  {
+    role: 'Associate Software Engineer',
+    company: 'MoodForCode',
+    location: 'Sri Lanka',
+    period: 'Jan 2024 — Jan 2025',
+    summary:
+      'Designed, developed, and maintained modern frontend web applications using React.js, delivering responsive and performant user interfaces for production-grade products.',
+    bullets: [
+      'Designed, developed, and maintained modern frontend web applications using React.js, delivering responsive and performant user interfaces.',
+      'Built reusable, scalable UI components following component-driven architecture and industry best practices, improving frontend maintainability.',
+      'Integrated RESTful APIs and optimized application performance, contributing to improved load times and user experience.',
+      'Collaborated in Agile sprint planning, code reviews, and retrospectives to maintain high-quality coding standards across the team.',
+    ],
+  },
   {
     role: 'Intern Software Engineer',
     company: 'DH3 Solutions Private Limited (Silver Leap Technology Pvt Ltd)',
