@@ -9,7 +9,7 @@ export const personal = {
   description:
     'A skilled web designer & developer passionate about building visually appealing, user-friendly experiences. Currently pursuing an MSc in Software Engineering at the University of Hertfordshire, UK.',
   resumeUrl:
-    'https://drive.google.com/file/d/1yusChTgj6UxDDeN-P707O7N6QY0iwnGj/view?usp=share_link',
+    'https://drive.google.com/file/d/1jNltW22G8aV_puymsfaZCSViIBYDSzPP/view?usp=share_link',
   email: 'kaanushan@email.com',
 };
 
