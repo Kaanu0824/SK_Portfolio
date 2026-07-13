@@ -17,8 +17,8 @@ const Projects = () => {
       <h2 className="section-title reveal">Things I've Built.</h2>
       <p className="section-sub reveal">
         A collection of projects spanning AI, full-stack web development and
-        software engineering — built with modern technologies and a focus on
-        real-world impact.
+        software engineering - built with modern technologies and a focus on
+        real-world impact
       </p>
 
       {/* ── Filter Bar ── */}
