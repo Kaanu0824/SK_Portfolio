@@ -4,12 +4,12 @@ export const personal = {
   name: 'Kaanushan Sivarajah',
   firstName: 'Kaanushan',
   role: 'Software Engineer',
-  tagline: 'Open to opportunities · UK',
+  tagline: 'Open to opportunities · SL / UK',
   location: 'London, United Kingdom /  Colombo, Sri Lanka',
   description:
     'A skilled web designer & developer passionate about building visually appealing, user-friendly experiences. Currently pursuing an MSc in Software Engineering at the University of Hertfordshire, UK.',
   resumeUrl:
-    'https://drive.google.com/file/d/1jNltW22G8aV_puymsfaZCSViIBYDSzPP/view?usp=share_link',
+    'https://drive.google.com/file/d/1KoojhMem19BzTXVxm50YhRdsxO04DGuI/view?usp=share_link',
   email: 'kaanushan@email.com',
 };
 

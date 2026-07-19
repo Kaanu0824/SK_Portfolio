@@ -21,7 +21,6 @@ const Projects = () => {
         real-world impact
       </p>
 
-      {/* ── Filter Bar ── */}
       <div className="projects-filter reveal">
         {FILTERS.map(f => (
           <button
@@ -37,7 +36,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* ── Grid ── */}
+
       <div className="projects-grid">
         {filtered.map((project, i) => (
           <div

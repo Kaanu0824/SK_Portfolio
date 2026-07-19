@@ -1,23 +1,39 @@
-import { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import './Navbar.css';
 import { personal } from '../../data/portfolio';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
-import './Navbar.css';
 
 const navLinks = [
   { href: '#about',      label: 'About' },
-    { href: '#experience', label: 'Experience' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#projects',   label: 'Projects' },
   { href: '#education',  label: 'Education' },
   { href: '#contact',    label: 'Contact' },
-  { href: '#projects', label: 'Projects' },
 ];
 
 const Navbar = ({ theme, toggleTheme }) => {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled,  setScrolled]  = useState(false);
+  const [menuOpen,  setMenuOpen]  = useState(false);
+  const [activeSection, setActiveSection] = useState('');
 
+  // Scroll detection — scrolled state + active section
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener('scroll', onScroll);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 40);
+
+      // Find which section is currently in view
+      const sections = navLinks.map(l => l.href.replace('#', ''));
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const el = document.getElementById(sections[i]);
+        if (el && window.scrollY >= el.offsetTop - 120) {
+          setActiveSection(sections[i]);
+          return;
+        }
+      }
+      setActiveSection('');
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
@@ -29,6 +45,8 @@ const Navbar = ({ theme, toggleTheme }) => {
 
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
+
+      {/* Logo */}
       <button className="nav-logo" onClick={(e) => handleNav(e, '#hero')}>
         <span className="nav-dot" />
         {personal.firstName}
@@ -36,16 +54,25 @@ const Navbar = ({ theme, toggleTheme }) => {
 
       {/* Desktop links */}
       <ul className="nav-links">
-        {navLinks.map((link) => (
-          <li key={link.href}>
-            <a href={link.href} onClick={(e) => handleNav(e, link.href)}>
-              {link.label}
-            </a>
-          </li>
-        ))}
+        {navLinks.map((link) => {
+          const sectionId = link.href.replace('#', '');
+          const isActive  = activeSection === sectionId;
+          return (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className={isActive ? 'active' : ''}
+                onClick={(e) => handleNav(e, link.href)}
+              >
+                {link.label}
+                {isActive && <span className="nav-active-dot" />}
+              </a>
+            </li>
+          );
+        })}
       </ul>
 
-      {/* Right side: Theme toggle + Resume CTA */}
+      {/* Right: theme toggle + resume */}
       <div className="nav-right">
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
         <a
@@ -69,17 +96,29 @@ const Navbar = ({ theme, toggleTheme }) => {
 
       {/* Mobile menu */}
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
-        {navLinks.map((link) => (
-          <a key={link.href} href={link.href} onClick={(e) => handleNav(e, link.href)}>
-            {link.label}
-          </a>
-        ))}
+        {navLinks.map((link) => {
+          const sectionId = link.href.replace('#', '');
+          const isActive  = activeSection === sectionId;
+          return (
+            <a
+              key={link.href}
+              href={link.href}
+              className={isActive ? 'active' : ''}
+              onClick={(e) => handleNav(e, link.href)}
+            >
+              {isActive && <span className="mobile-active-bar" />}
+              {link.label}
+            </a>
+          );
+        })}
+
         <div className="mobile-theme-row">
           <span className="mobile-theme-label">
             {theme === 'dark' ? 'Dark Mode' : 'Light Mode'}
           </span>
           <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
         </div>
+
         <a
           className="mobile-cta"
           href={personal.resumeUrl}
